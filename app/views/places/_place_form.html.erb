@@ -1,0 +1,6 @@
+<div class="place-form">
+  <%= form_tag places_path, multipart: true do %>
+    <%= file_field_tag :file, class: 'hidden jsFileField' %>
+    <%= button_tag 'Download from CSV', class: 'btn btn-primary center-block jsDownloadBtn' %>
+  <% end %>
+</div>

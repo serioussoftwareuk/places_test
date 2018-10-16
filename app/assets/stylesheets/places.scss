@@ -1,0 +1,29 @@
+body {
+  background: url("background.jpeg") fixed;
+}
+
+.alert {
+  margin: 30px 0 0 0;
+}
+
+.panel-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.place-form {
+  margin: 30px 0;
+}
+
+.show-page-container {
+  margin-top: 40px;
+}
+
+.static-map-container {
+  width: 50%;
+
+  img {
+    width: 100%;
+  }
+}

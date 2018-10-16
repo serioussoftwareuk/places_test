@@ -1,0 +1,19 @@
+<div class="container">
+  <%= render('notifications/alert', alert: alert) if alert.present? %>
+
+  <div class="row">
+    <div class="col-sm-8 col-sm-offset-2">
+      <%= render 'place_form' %>
+    </div>
+  </div>
+
+  <% if @places.any? %>
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-2">
+        <% @places.each do |place| %>
+          <%= render 'place', place: place %>
+        <% end %>
+      </div>
+    </div>
+  <% end %>
+</div>
