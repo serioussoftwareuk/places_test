@@ -8,7 +8,7 @@
   <div class="panel-body">
     <%= link_to 'Place details', place_path(place) %>
     <div class="static-map-container">
-      <%= google_map(place, true) %>
+      <%= google_map(place, true) if place.geocoded? %>
     </div>
   </div>
 </div>
